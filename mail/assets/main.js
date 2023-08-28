@@ -6,6 +6,10 @@ Usiamo un input e un bottone per inserire la mail e poi mostriamo i risultati in
 
 
 // chiedi all’utente la sua email
+const userEmail = prompt("Inserisci la tua email");
+
+// creo array dove dichiaro tutte le email che sono sulla lista
+ const emailList = ['luca.java@gmail.com','alessia.java@gmail.com','filippo.java@gmail.com','giovanni.java@gmail.com'];
 
 
 // controlla che sia nella lista di chi può accedere
