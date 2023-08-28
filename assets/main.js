@@ -10,7 +10,7 @@ const diceRoll = document.getElementById("roll");
 diceRoll.addEventListener('click',
 function() {
 
-    //funzione per avere i nuovi casuali da 1 a 6(si parte da 0)
+    //funzione per avere i numeri casuali da 1 a 6(si parte da 0)
   let playerRoll = Math.floor(Math.random()*6) + 1;
   let computerRoll = Math.floor(Math.random()*6) + 1;
   
