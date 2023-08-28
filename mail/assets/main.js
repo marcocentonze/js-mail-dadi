@@ -6,7 +6,7 @@ Usiamo un input e un bottone per inserire la mail e poi mostriamo i risultati in
 
 
 // chiedi all’utente la sua email
-const userEmail = prompt("Inserisci la tua email");
+//const userEmail = prompt("Inserisci la tua email");
 // Seleziona l'elemento bottone
 const verificaBtn = document.getElementById("verifica");
 
@@ -28,13 +28,14 @@ for (let i = 0; i < emailList.length; i++) {
 
     if (utente === userEmail) {
         utenteTrovato = true;
-        document.getElementById("risultato").textContent = "Complimenti, fai parte della lista!";
-       // console.log("Complimenti, fai parte della lista!"); // stampa in console risultato positivo
-    } else {
-        document.getElementById("risultato").textContent = "Mi dispiace, non fai parte della lista!";
-       // console.log('Mi dispiace,non fai parte della lista');// stampa in console risultato negativo
     }
+}
 
-  }
+// mostra il messaggio in base al risultato(da mettere dopo il loop altrimenti non funziona)
+if (utenteTrovato) {
+    document.getElementById("risultato").textContent = "Complimenti, fai parte della lista!";
+} else {
+    document.getElementById("risultato").textContent = "Mi dispiace, non fai parte della lista!";
+}
 });
 
